@@ -85,7 +85,7 @@ def withdraw_money():
     print("Your current Acount is : ${} \n".format(account))
     cash = int( input("Enter desired ammount money to withdraw \n") )
     if account >= cash and cash >= 0:
-        question = input("Are you sure to withdraw ${} ? \n Your balance will be ${} after this prosedure \n y/n \n".format(account, account - cash))
+        question = input("Are you sure to withdraw ${} ? \n Your balance will be ${} after this prosedure \n y/n \n".format(cash, account - cash))
         if question == "y":
             account -= cash
             answer = input("Do you wish to go your accounts? y/n \n")
